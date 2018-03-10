@@ -1,0 +1,245 @@
+/*
+	* Project Name : Build a Portfolio Site
+	* Version:
+	* Author Name: Sarah Hassan
+	* Date: 6/4/2018
+*/
+
+
+/* gerneral */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+}
+
+img,
+video {
+	max-width: 100%;
+}
+
+.container {
+	padding: 10px;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.section_padding {
+	padding: 20px 0 10px;
+}
+
+.horizontal_line {
+	border-top: 1px solid #7d97ad;
+}
+
+
+/* start header */
+.main_header {
+	display: flex;
+    align-items: flex-start;
+	text-transform: uppercase;
+	padding: 10px 0 15px;
+}
+
+.logo_img {
+	width: 30%;
+}
+
+.developer_name {
+	width: 70%;
+	margin-left: auto;
+    text-align: right;
+}
+
+.developer_name h1 {
+	margin-top: 0;
+    font-weight: 100;
+    margin: 0;
+    line-height: 0.7em;
+    font-size: 1.7em;
+}
+
+.developer_name p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+/* main header */
+.main img {
+width: 100%;
+}
+
+
+/* start my works section */
+.my_works {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.my_works .section_header {
+	width: 100%;
+}
+
+.my_works h2 {
+	margin-right: auto;
+	color: #7d97ad;
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+.project {
+	width: 100%;
+}
+
+.project .project_img {
+	max-width: 80%;
+	box-shadow: 3px 3px 20px #d4d4d4;
+}
+
+.project h4 {
+	margin: 0;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.project .project_link {
+	margin-top: 10px;
+    font-size: 1em;
+    padding: 0 0 30px;
+}
+
+.project .project_link a {
+	color: #30bfd8;
+	text-decoration: none;
+	-webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.project .project_link a:hover {
+	color: #3c56ba;
+}
+
+
+/* footer */
+.footer {
+	padding: 20px 10px;
+	margin: 0 -10px -10px;
+    background-color: #eaeaea;
+}
+
+.footer .social_icons {
+	margin-top: 15px;
+}
+
+.footer .social_icons a {
+	margin-top: 15px;
+    color: #38405f;
+	text-decoration: none;
+	-webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.footer .social_icons a:hover {
+	 color: #3c56ba;
+}
+
+.footer .social_icons .fab {
+	margin-right: 10px;
+    font-size: 3em;
+}
+
+
+/* media queries */
+/* for media screens */
+@media screen and (min-width: 499px) {
+	
+	.container {
+    	padding: 30px 20px;
+	}
+	
+	.developer_name h1 {
+		font-size: 2em;
+	}
+	
+	.project {
+    	width: 50%;
+	}
+	
+	.project:last-child {
+		margin-right: auto;
+	}
+	
+	.project:first-child {
+		margin-right: auto;
+	}
+	
+	.project .project_img {
+    	max-width: 90%;
+	}
+	
+	.footer {
+    	margin: 0 -20px -30px;
+	}
+	
+}
+
+
+/* for large screens */
+@media screen and (min-width: 800px) {
+	
+	.container {
+    	width: 800px;
+    	padding: 30px;
+		margin-left: auto;
+		margin-right: auto; 
+	}
+	
+	.developer_name h1 {
+    	font-size: 3em;
+	}
+	
+	.developer_name p {
+    	font-weight: 500;
+	}
+	
+	.main {
+		margin: 0;
+	}
+	
+	.my_works h2 {
+    	font-size: 2em;
+	}
+	
+	.project {
+    	width: 33.33%;
+	}
+	
+	.project h4 {
+		font-size: 1.5em;
+	}
+	
+}
+
+@media screen and (min-width: 1024px) {
+	
+	.container {
+    	width: 950px;
+    	padding: 30px;
+		margin-left: auto;
+		margin-right: auto; 
+	}
+	
+}
