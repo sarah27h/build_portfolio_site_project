@@ -17,14 +17,16 @@
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 1em;
 }
 
+/*
 img,
 video {
 	max-width: 100%;
 }
+*/
 
 .container {
 	padding: 10px;
@@ -136,7 +138,6 @@ width: 100%;
 /* footer */
 .footer {
 	padding: 20px 10px;
-	margin: 0 -10px -10px;
     background-color: #eaeaea;
 }
 
@@ -190,10 +191,6 @@ width: 100%;
     	max-width: 90%;
 	}
 	
-	.footer {
-    	margin: 0 -20px -30px;
-	}
-	
 }
 
 
@@ -233,7 +230,8 @@ width: 100%;
 	
 }
 
-@media screen and (min-width: 1024px) {
+
+@media screen and (min-width: 1028px) {
 	
 	.container {
     	width: 950px;
