@@ -2,7 +2,7 @@
 Project Title: Build a Portfolio Site 
 Version: v1
 Author Name: Sarah Hassan
-Date: 6/4/2018
+Date: 6/3/2018
 
 Project description:
 This project is for building a portfolio website for udacity FEND track second phase nano degree. It's design based on the mostly fluid pattern.

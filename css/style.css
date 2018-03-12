@@ -1,8 +1,8 @@
 /*
 	* Project Name : Build a Portfolio Site
-	* Version:
+	* Version: 1
 	* Author Name: Sarah Hassan
-	* Date: 6/4/2018
+	* Date: 6/3/2018
 */
 
 
@@ -21,12 +21,10 @@ body {
 	font-size: 1em;
 }
 
-/*
 img,
 video {
 	max-width: 100%;
 }
-*/
 
 .container {
 	padding: 10px;
