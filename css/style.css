@@ -17,8 +17,7 @@
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
-	font-size: 1em;
+	font: 1em "Open Sans", sans-serif;
 }
 
 img,
@@ -77,7 +76,7 @@ video {
 
 /* main header */
 .main img {
-width: 100%;
+	width: 100%;
 }
 
 
