@@ -8,37 +8,43 @@ projects = [
         title: 'museums guide react',
         src: 'images/project1.png',
         alt: 'Museum guide project',
-        href: ''
+        href: 'https://sarah27h.github.io/test-deploy/',
+        git: 'https://github.com/sarah27h/FEND-neighborhood-map-react'
     },
     {
         title: 'myreads react',
         src: 'images/project2.png',
         alt: 'myreads react project',
-        href: ''
+        href: 'https://sarah27h.github.io/reactnd-project-myreads-deploy/#/reactnd-project-myreads-deploy/',
+        git: 'https://github.com/sarah27h/reactnd-project-myreads-starter'
     },
     {
         title: 'resturant reviews',
         src: 'images/project3.png',
         alt: 'resturant reviews project',
-        href: 'https://sarah27h.github.io/FEND-restaurant-stage-1/'
+        href: 'https://sarah27h.github.io/FEND-restaurant-stage-1/',
+        git: 'https://github.com/sarah27h/FEND-restaurant-stage-1'
     },
     {
         title: 'Memory game',
         src: 'images/project4.png',
         alt: 'Memory game project',
-        href: 'https://sarah27h.github.io/fend-project-memory-game-master/'
+        href: 'https://sarah27h.github.io/fend-project-memory-game-master/',
+        git: 'https://github.com/sarah27h/fend-project-memory-game-master'
     },
     {
         title: 'Arcade game',
         src: 'images/project5.png',
         alt: 'Arcade game project',
-        href: 'https://sarah27h.github.io/arcade-game-master/'
+        href: 'https://sarah27h.github.io/arcade-game-master/',
+        git: 'https://github.com/sarah27h/arcade-game-master'
     },
     {
         title: 'feed reader testing',
         src: 'images/project6.png',
         alt: 'feed reader testing project',
-        href: 'https://sarah27h.github.io/feed-reader/'
+        href: 'https://sarah27h.github.io/feed-reader/',
+        git: 'https://github.com/sarah27h/feed-reader'
     },
     {
         title: 'bakery website',
@@ -81,12 +87,17 @@ function addProjects() {
         let projectThumbnail = document.createElement('img');
         let projectTitle = document.createElement('h4');
         let projectLink = document.createElement('p');
+        
         let projectUrl = document.createElement('a');
+        
     
         // add attribute to html elements needed
         setAttributes(projectSection, {'class': 'project text_center'});
         setAttributes(projectLink, {'class': 'project_link'});
-        setAttributes(projectUrl, {'href': project.href});    
+        if(typeof (project.git) !== undefined ) {
+            
+        }
+        setAttributes(projectUrl, {'href': project.href});              
         setAttributes(projectThumbnail, {'class': 'project_img', 'src': project.src, 'alt': project.alt});
 
         // add section header h4 content
@@ -103,7 +114,17 @@ function addProjects() {
         // add projectUrl element as child to projectLink parent
         // add projectUrl content
         projectLink.appendChild(projectUrl);
-        projectUrl.innerHTML = 'Visit'
+        projectUrl.innerHTML = '<i class="fas fa-link"></i>'
+       
+        // check it project has a git link or not to add git icon
+        if(typeof (project.git) !== 'undefined' ) {
+            let projectGit = document.createElement('a');
+            setAttributes(projectGit, {'href': project.git});
+            console.log('you in');
+            projectLink.appendChild(projectGit);
+            projectGit.innerHTML = '<i class="fab fa-github"></i>'
+        }
+        
 
     });
 
