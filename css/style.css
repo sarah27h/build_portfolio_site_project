@@ -116,15 +116,17 @@ video {
 
 .project .project_link {
 	margin-top: 10px;
-    font-size: 1em;
-    padding: 0 0 30px;
+    font-size: 2em;
+    padding: 5px 0 55px;
+    text-align: center;
 }
 
 .project .project_link a {
 	color: #30bfd8;
-	text-decoration: none;
-	-webkit-transition: color 0.5s;
+    text-decoration: none;
+    -webkit-transition: color 0.5s;
     transition: color 0.5s;
+    padding: 28px;
 }
 
 .project .project_link a:hover {
