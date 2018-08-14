@@ -41,6 +41,12 @@ video {
 	border-top: 1px solid #7d97ad;
 }
 
+.validation_icon {
+	border: 0;
+	width: 64px;
+	height: 20px;
+}
+
 
 /* start header */
 .main_header {
