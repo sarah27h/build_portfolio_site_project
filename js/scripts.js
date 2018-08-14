@@ -2,8 +2,8 @@
  *
  * data
  *
- */
-projects = [
+*/
+let projects = [
     {
         title: 'museums guide react',
         src: 'images/project1.png',
@@ -64,7 +64,7 @@ projects = [
         alt: 'panda animal',
         href: 'https://codepen.io/Sarah27h/pen/RjLwKR?editors=1000'
     }
-]
+];
 
 
 /*
@@ -81,7 +81,7 @@ function addProjects() {
 
     let myworksSection = document.getElementsByClassName('my_works')[0];
     console.log(myworksSection);
-    projects.forEach(project => {
+    projects.forEach(function(project) {
         // create all html elements needed
         let projectSection = document.createElement('section');
         let projectThumbnail = document.createElement('img');
