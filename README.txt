@@ -1,26 +1,37 @@
+My Portfolio
+===============================
 
-Project Title: Build a Portfolio Site 
-Version: v1
-Author Name: Sarah Hassan
-Date: 6/3/2018
+## Table of Contents
 
-Project description:
-This project is for building a portfolio website for udacity FEND track second phase nano degree. It's design based on the mostly fluid pattern.
+* [About the Project](#about-the-project)
+* [Credits](#credits)
+* [License](#license)
 
-Code sources:
-	w3schools.com
-	stackoverflow
-	css-tricks.com
-	developers.google.com
-	internetingishard.com
+## About the Project
 
-Image credits
-	panda card designed by Freepik
-	banner image designed by Newelement / Freepik
-	logo from udacity
+This is my portfolio. It's design based on the mostly fluid pattern.
 
-Font icon
-	fontawesome.com
+## Credits
 
-Font 
-	"Open Sans" from  fonts.google.com
+	- Code sources:
+		w3schools.com
+		stackoverflow
+		css-tricks.com
+		developers.google.com
+		internetingishard.com
+
+	- Image credits
+		panda card designed by Freepik
+		banner image designed by Newelement / Freepik
+		logo from udacity
+
+	- Font icon
+		fontawesome.com
+
+	- Font 
+		"Open Sans" from  fonts.google.com
+
+
+## License
+
+This project is licensed under the terms of the <a href="https://choosealicense.com/licenses/mit/" rel="nofollow">MIT</a> license.
