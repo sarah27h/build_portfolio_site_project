@@ -115,7 +115,6 @@ video {
 
 .project h4 {
 	margin: 0;
-    text-transform: uppercase;
     font-size: 1.25em;
     font-weight: 400;
 }
@@ -230,7 +229,7 @@ video {
 	}
 	
 	.project h4 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 	
 }

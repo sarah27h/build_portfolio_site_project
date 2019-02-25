@@ -19,7 +19,7 @@ let projects = [
         git: 'https://github.com/sarah27h/reactnd-project-myreads-starter'
     },
     {
-        title: 'project manager react, redux',
+        title: 'project manager redux',
         src: 'images/project3.png',
         alt: 'project manager project',
         href: 'https://project-manager-7b746.firebaseapp.com/',
@@ -115,7 +115,8 @@ function addProjects() {
         setAttributes(projectThumbnail, {'class': 'project_img', 'src': project.src, 'alt': project.alt});
 
         // add section header h4 content
-        projectTitle.innerHTML = project.title;
+        // capitalize the first letter of each word in project title
+        projectTitle.innerHTML = letterCapitalize(project.title);
 
         // add projectSection element to myworksSection parent
         myworksSection.appendChild(projectSection);
@@ -155,5 +156,25 @@ function setAttributes(element, attributes) {
         element.setAttribute(key, attributes[key]);
     }
 }
+
+
+/**
+* @description Capitalize the first letter of each word
+* @param {string} str
+* @returns {string} first letter of each word in str capitalized
+*/
+function letterCapitalize(str) { 
+  
+	// our regex [a-z] matches every alphabetic character in the string
+	// \b is used to find a match at the beginning or end of a word
+    // replace(searchvalue, newvalue)
+    // searches a string for a specified value, or a regular expression, 
+    // and returns a new string where the specified values are replaced
+	// using a function to return first letter of each word capitalized
+	return str.replace(/\b[a-z]/gi, function(char) { 
+	  return char.toUpperCase();
+	});
+		   
+  }
 
 addProjects();
