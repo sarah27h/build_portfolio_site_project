@@ -72,12 +72,12 @@ const  PROJRECTS = [
         src: 'images/project15.png',
         alt: 'pixel art project',
         href: 'https://codepen.io/Sarah27h/full/QagrVa/'
-    },
-    {
-        title: 'Animal Card',
-        src: 'images/project16.png',
-        alt: 'panda animal',
-        href: 'https://codepen.io/Sarah27h/pen/RjLwKR?editors=1000'
     }
+    // {
+    //     title: 'Animal Card',
+    //     src: 'images/project16.png',
+    //     alt: 'panda animal',
+    //     href: 'https://codepen.io/Sarah27h/pen/RjLwKR?editors=1000'
+    // }
 ];
 
