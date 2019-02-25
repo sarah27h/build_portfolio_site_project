@@ -19,15 +19,22 @@ let projects = [
         git: 'https://github.com/sarah27h/reactnd-project-myreads-starter'
     },
     {
-        title: 'resturant reviews',
+        title: 'project manager react, redux',
         src: 'images/project3.png',
+        alt: 'project manager project',
+        href: 'https://project-manager-7b746.firebaseapp.com/',
+        git: 'https://github.com/sarah27h/projects-manager'
+    },
+    {
+        title: 'resturant reviews',
+        src: 'images/project4.png',
         alt: 'resturant reviews project',
         href: 'https://sarah27h.github.io/FEND-restaurant-stage-1/',
         git: 'https://github.com/sarah27h/FEND-restaurant-stage-1'
     },
     {
         title: 'Get Weather React',
-        src: 'images/project4.png',
+        src: 'images/project6.png',
         alt: 'Get Weather project',
         href: 'https://sarah27h.github.io/react-get-weather-app/',
         git: 'https://github.com/sarah27h/react-get-weather-app'
