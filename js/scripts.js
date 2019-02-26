@@ -20,51 +20,66 @@ function addProjects() {
 
     let myworksSection = document.getElementsByClassName('my_works')[0];
     console.log(myworksSection);
-    projects.forEach(function(project) {
-        // create all html elements needed
+    projects.forEach(function(project, index) {
+
+        /** 
+         * create htmls elements needed for each project 
+         * **/
         let projectSection = document.createElement('section');
         let projectThumbnail = document.createElement('img');
         let projectTitle = document.createElement('h4');
-        let projectLink = document.createElement('p');
-        
+        let projectLinks = document.createElement('p');
         let projectUrl = document.createElement('a');
-        
+        let projectGit = document.createElement('a');
+        let projectInfo = document.createElement('a');
     
-        // add attribute to html elements needed
+        /** 
+         * add attributes to html elements needed for each project 
+         * **/
         setAttributes(projectSection, {'class': 'project text_center'});
-        setAttributes(projectLink, {'class': 'project_link'});
+        setAttributes(projectLinks, {'class': 'project_link'});
         if(typeof (project.git) !== undefined ) {
-            
+            setAttributes(projectGit, {'href': project.git});
+            console.log('you in');
+            projectLinks.appendChild(projectGit);
         }
         setAttributes(projectUrl, {'href': project.href});              
         setAttributes(projectThumbnail, {'class': 'project_img', 'src': project.src, 'alt': project.alt});
+        setAttributes(projectInfo, {'class': 'project_info'});
 
         // add section header h4 content
         // capitalize the first letter of each word in project title
         projectTitle.innerHTML = letterCapitalize(project.title);
 
+        /** 
+         * append elements
+         * **/
         // add projectSection element to myworksSection parent
         myworksSection.appendChild(projectSection);
 
         // add html elements to projectSection parent
         projectSection.appendChild(projectThumbnail);
         projectSection.appendChild(projectTitle);
-        projectSection.appendChild(projectLink);
+        projectSection.appendChild(projectLinks);
 
         // add projectUrl element as child to projectLink parent
+        projectLinks.appendChild(projectUrl);
+
+        // add projectInfo element as child to projectLink parent
+        projectLinks.appendChild(projectInfo);
+
+        /** 
+         * add project link icons
+         * **/
         // add projectUrl content
-        projectLink.appendChild(projectUrl);
         projectUrl.innerHTML = '<i class="fas fa-link"></i>'
+        // add projectInfo content
+        projectInfo.innerHTML = `<i class="fas fa-info-circle" id=${index}></i>`
        
         // check it project has a git link or not to add git icon
         if(typeof (project.git) !== 'undefined' ) {
-            let projectGit = document.createElement('a');
-            setAttributes(projectGit, {'href': project.git});
-            console.log('you in');
-            projectLink.appendChild(projectGit);
             projectGit.innerHTML = '<i class="fab fa-github"></i>'
         }
-        
 
     });
 
@@ -103,3 +118,4 @@ function letterCapitalize(str) {
   }
 
 addProjects();
+
