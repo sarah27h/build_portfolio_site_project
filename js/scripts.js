@@ -5,7 +5,17 @@
 */
 let projects = PROJRECTS;
 
+/*
+ *
+ * variables
+ *
+*/
 
+// modal box
+const modal = document.getElementById('conModal');
+const modalInfo = document.getElementById('modal_text');
+const modalImg = document.getElementById('modal_img');
+const modalCloseBtn = document.querySelector(".modal_close_btn");
 /*
  *
  * functions
@@ -83,6 +93,9 @@ function addProjects() {
 
     });
 
+    // add a click event listener for project info btn
+    myworksSection.addEventListener('click', showInfomodal);
+
 }
 
 
@@ -116,6 +129,41 @@ function letterCapitalize(str) {
 	});
 		   
   }
+
+
+/**
+* @description show info modal and display data
+* @param {object} evt
+*/
+function showInfomodal(evt) {
+    if (evt.target.nodeName.toLowerCase() === 'i') {
+        console.log('info widow', evt.target, typeof(evt));
+        // show info modal
+        modal.style.cssText = 'display: block';
+        id = Number(evt.target.getAttribute('id'));
+        modalInfo.innerHTML = projects[id].info;
+        modalImg.setAttribute('src', projects[id].src);
+    }
+}
+
+
+/*
+ *
+ * event listeners
+ *
+*/
+// add click event to modal close icon to close the modal
+modalCloseBtn.addEventListener('click', function() {
+    modal.style.cssText = 'display: none';
+});
+
+
+// add click event to window any click outside of the modal close it
+window.addEventListener('click', function(evt) {
+    if (evt.target == modal) {
+        modal.style.cssText = 'display: none';
+    }
+});
 
 addProjects();
 
