@@ -12,7 +12,7 @@ const  PROJRECTS = [
         href: 'https://sarah27h.github.io/test-deploy/',
         git: 'https://github.com/sarah27h/FEND-neighborhood-map-react',
         info: 'The project requirements are to develop a single page application featuring a map of your neighborhood. Then add functionality to this map including highlighted locations, third-party data about those locations and various ways to browse the content. Succeeded in getting a score of 100% for accessibility and 88% for best practices after performing Audits test.',
-        tech: 'React.js, Google Maps API, FourSquare API, AJAX, Responsive and Accessible'
+        tech: 'React.js, Google Maps API, FourSquare API, AJAX, Responsive, Accessible'
     },
     {
         title: 'myreads react',
@@ -21,7 +21,7 @@ const  PROJRECTS = [
         href: 'https://sarah27h.github.io/reactnd-project-myreads-deploy/#/reactnd-project-myreads-deploy/',
         git: 'https://github.com/sarah27h/reactnd-project-myreads-starter',
         info: 'The project requirements are, create a bookshelf app that allows a user to select and categorize books they have read, are currently reading, or want to read.',
-        tech: 'React.js, CSS, HTML, Javascript and Cross-Browser-Testing'
+        tech: 'React.js, CSS, HTML, Javascript, Cross-Browser-Testing'
     },
     {
         title: 'project manager redux',
@@ -48,7 +48,7 @@ const  PROJRECTS = [
         href: 'https://sarah27h.github.io/react-get-weather-app/',
         git: 'https://github.com/sarah27h/react-get-weather-app',
         info: 'This project is a single page application from scratch to work as an interactive weather app',
-        tech: 'React.js, Responsive, Accessible, Cross-browsers, openweathermap API and AJAX '
+        tech: 'React.js, Responsive, Accessible, Cross-browsers, openweathermap API, AJAX '
     },
     {
         title: 'Memory game',
@@ -57,7 +57,7 @@ const  PROJRECTS = [
         href: 'https://sarah27h.github.io/fend-project-memory-game-master/',
         git: 'https://github.com/sarah27h/fend-project-memory-game-master',
         info: 'The project requirements are to build a complete browser-based card matching game. This game is well-designed, feature-packed memory game, with timer, modal box, score, and responsive in all screen sizes. Succeeded in getting a score of 83% for accessibility and 88% for best practices after performing Audits test.',
-        tech: 'Javascript, CSS3, HTML and Responsive'
+        tech: 'Javascript, CSS3, HTML, Responsive'
     },
     {
         title: 'Arcade game',
@@ -66,7 +66,7 @@ const  PROJRECTS = [
         href: 'https://sarah27h.github.io/arcade-game-master/',
         git: 'https://github.com/sarah27h/arcade-game-master',
         info: 'The project is provided visual assets and a game loop engine; using these tools I add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger. Succeeded in getting a score of 90% for accessibility, 88% for best practices, and 75% for performance after performing Audits test.',
-        tech: 'Javascript, Object-Oriented Programming and HTML5 Canvas'
+        tech: 'Javascript, Object-Oriented Programming, HTML5 Canvas'
     },
     {
         title: 'feed reader testing',
@@ -83,7 +83,7 @@ const  PROJRECTS = [
         alt: 'best bakery website project',
         href: 'http://bestbakery.000webhostapp.com/',
         info: 'Best Bakery is a beautiful and unique one page HTML template. Created to fit your small business like cake shops, patisserie shops, and bakeries.',
-        tech: 'Bootstrap, Jquery, Javascript, Google maps, HTML, CSS, Responsive and Handlebars library'
+        tech: 'Bootstrap, Jquery, Javascript, Google maps, HTML, CSS, Responsive, Handlebars library'
     },
     {
         title: 'Pixel Art Maker',
