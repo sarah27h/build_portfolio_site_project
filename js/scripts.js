@@ -15,6 +15,7 @@ let projects = PROJRECTS;
 const modal = document.getElementById('conModal');
 const modalInfo = document.getElementById('modal_text');
 const modalImg = document.getElementById('modal_img');
+const modalTech = document.getElementById('modal_tech');
 const modalCloseBtn = document.querySelector(".modal_close_btn");
 /*
  *
@@ -142,6 +143,7 @@ function showInfomodal(evt) {
         modal.style.cssText = 'display: block';
         id = Number(evt.target.getAttribute('id'));
         modalInfo.innerHTML = projects[id].info;
+        modalTech.innerHTML = projects[id].tech;
         modalImg.setAttribute('src', projects[id].src);
     }
 }
