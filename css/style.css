@@ -131,7 +131,8 @@ video {
     text-decoration: none;
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
-    padding: 28px;
+	padding: 25px;
+	cursor: pointer;
 }
 
 .project .project_link a:hover {
