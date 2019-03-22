@@ -85,7 +85,7 @@ function addProjects() {
         // add projectUrl content
         projectUrl.innerHTML = '<i class="fas fa-link"></i>'
         // add projectInfo content
-        projectInfo.innerHTML = `<i class="fas fa-info-circle" id=${index}></i>`
+        projectInfo.innerHTML = `<i class="project-info fas fa-info-circle" id=${index}></i>`
        
         // check it project has a git link or not to add git icon
         if(typeof (project.git) !== 'undefined' ) {
@@ -137,7 +137,7 @@ function letterCapitalize(str) {
 * @param {object} evt
 */
 function showInfomodal(evt) {
-    if (evt.target.nodeName.toLowerCase() === 'i') {
+    if (evt.target.nodeName.toLowerCase() === 'i' && event.target.classList.contains('project-info')) {
         console.log('info widow', evt.target, typeof(evt));
         // show info modal
         modal.style.cssText = 'display: block';
