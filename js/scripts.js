@@ -142,7 +142,7 @@ function showInfomodal(evt) {
         // show info modal
         modal.style.cssText = 'display: block';
         id = Number(evt.target.getAttribute('id'));
-        modalInfo.innerHTML = projects[id].info;
+        modalInfo.innerHTML = (projects[id].info).replace(/. ●/g, ".<br>●"); // add new line after every project point
         modalTech.innerHTML = projects[id].tech;
         modalImg.setAttribute('src', projects[id].src);
     }
