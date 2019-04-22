@@ -180,7 +180,7 @@ video {
 
 .modal .text_wrapper {
 	width: 100%;
-	text-align: center;
+	text-align: left;
 	font-size: 1.1em;
 }
 
@@ -316,7 +316,6 @@ video {
 	.modal .text_wrapper {
 		width: 49%;
 		margin-left: 33px;
-		text-align: left;
 	}
 	
 }
